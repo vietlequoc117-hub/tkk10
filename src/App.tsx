@@ -253,9 +253,8 @@ export default function App() {
     <div className="h-screen bg-slate-50 text-slate-800 font-sans flex flex-col overflow-hidden">
       <header className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white shrink-0">
         <div>
-          <h1 className="text-xl font-semibold tracking-tight text-slate-900">EduData Analytics</h1>
-          <p className="text-xs text-slate-500 mt-1">Hệ thống tổng hợp và phân tích điểm 4 GD</p>
-          <p className="text-xs text-slate-500 mt-1">Sắp xếp lại học sinh Khối 10</p>
+          <h1 className="text-xl font-semibold tracking-tight text-slate-900">THPT LÊ QUÝ ĐÔN - NB</h1>
+          <p className="text-xs text-slate-500 mt-1">Hệ thống tổng hợp và phân tích điểm thi 4 GD</p>          
         </div>
         <div className="flex items-center gap-3">
           <div className="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1.5 rounded-full">
@@ -325,7 +324,7 @@ export default function App() {
                </div>
                <div>
                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900 mb-2">Tổng hợp điểm số</h2>
-                 <p className="text-slate-500 text-sm leading-relaxed">Tải lên các tệp Excel (VD: Anh_GHKI.xlsx) và hệ thống sẽ tự động tổng hợp, tính điểm trung bình và xuất ra file kết quả.</p>
+                 <p className="text-slate-500 text-sm leading-relaxed">Tải lên các tệp Excel (VD: Anh_GHKI.xlsx) và hệ thống sẽ tự động tính điểm trung bình 4 GĐ thi, làm căn cứ để sắp xếp lại các lớp.</p>
                </div>
                
                <button 
