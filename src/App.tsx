@@ -254,7 +254,7 @@ export default function App() {
       <header className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white shrink-0">
         <div>
           <h1 className="text-xl font-semibold tracking-tight text-slate-900">THPT LÊ QUÝ ĐÔN - NB</h1>
-          <p className="text-xs text-slate-500 mt-1">Hệ thống tổng hợp và phân tích điểm thi 4 GD</p>          
+          <p className="text-xs text-slate-500 mt-1">Hệ thống tổng hợp và phân tích điểm thi</p>          
         </div>
         <div className="flex items-center gap-3">
           <div className="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1.5 rounded-full">
