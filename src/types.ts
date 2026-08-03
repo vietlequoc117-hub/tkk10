@@ -7,4 +7,4 @@ export interface Student {
   scores: Record<string, number[]>;
 }
 
-export const SUBJECTS = ['Anh', 'Địa', 'Hoá', 'Lí', 'Toán', 'Văn'];
+export const SUBJECTS = ['Anh', 'Địa', 'Hoá', 'Lí', 'Toán', 'Văn', 'Sinh', 'Sử', 'GDCD', 'Tin', 'CN', 'TD'];

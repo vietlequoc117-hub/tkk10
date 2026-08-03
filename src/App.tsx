@@ -13,7 +13,7 @@ export default function App() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
-      const newFiles = Array.from(e.target.files).filter(f => f.name.endsWith('.xlsx'));
+      const newFiles = Array.from(e.target.files as FileList).filter((f: File) => f.name.endsWith('.xlsx'));
       setFiles(prev => [...prev, ...newFiles]);
       setIsDone(false);
     }
@@ -193,9 +193,7 @@ export default function App() {
           });
 
           let tbAll = null;
-          if (countSubjects === 6) {
-            tbAll = Math.round((totalAvg / 6) * 100) / 100;
-          } else if (countSubjects > 0) {
+          if (countSubjects > 0) {
             tbAll = Math.round((totalAvg / countSubjects) * 100) / 100;
           }
           
@@ -218,9 +216,10 @@ export default function App() {
             }
             
             const isBoldColumn = i === tbAllIndex || i === lopIndex; // TB_All and Lớp
-            cell.font = { name: 'Times New Roman', size: 12, bold: cell.row === 1 || isBoldColumn };
+            const rowNumber = Number(cell.row);
+            cell.font = { name: 'Times New Roman', size: 12, bold: rowNumber === 1 || isBoldColumn };
             
-            if (isBoldColumn && cell.row > 1) {
+            if (isBoldColumn && rowNumber > 1) {
               cell.alignment = { horizontal: 'center', vertical: 'middle' };
             }
             
